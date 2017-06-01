@@ -1,0 +1,46 @@
+//Type
+$sans:'Merriweather Sans',  'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+
+//Colors
+$brand: #00c444; //rgba(204, 105, 71, 1);
+$cool-grey:#7A7F99; //rgb(122, 127, 153, 1)
+$white: #fff;
+
+$grey-10: lighten($cool-grey,50%); //white
+$grey-9: lighten($cool-grey,40%); //#edeef2
+$grey-8: lighten($cool-grey,30%); //#d1d2db
+$grey-7: lighten($cool-grey,20%); //#b4b7c5
+$grey-6: lighten($cool-grey,10%); //#979baf
+$grey-5: $cool-grey;
+$grey-4: darken($cool-grey,10%); //#61667f
+$grey-3: darken($cool-grey,20%); //#4b4f62
+$grey-2: darken($cool-grey,30%); //#353845
+$grey-1: darken($cool-grey,40%); //#1f2028
+$grey-0: darken($cool-grey,50%); //#09090b
+
+$brand-10: lighten($brand,50%);
+$brand-9: lighten($brand,40%);
+$brand-8: lighten($brand,30%);
+$brand-7: lighten($brand,20%);
+$brand-6: lighten($brand,10%);
+$brand-5: $brand;
+$brand-4: darken($brand,10%);
+$brand-3: darken($brand,20%);
+$brand-2: darken($brand,30%);
+$brand-1: darken($brand,40%);
+$brand-0: darken($brand,50%);
+
+$transparent-brand-1: fade-out($brand, 0.2);
+$transparent-brand-2: fade-out($brand, 0.4);
+$transparent-brand-3: fade-out($brand, 0.6);
+$transparent-brand-4: fade-out($brand, 0.8);
+$transparent-brand-5: fade-out($brand, 1);
+
+//Media Queries
+$tablet: "screen and (min-width:40em)";
+$desktop: "screen and (min-width:80em)";
+
+$serif: $sans;
+$red: $brand;
+$red-2: brand-2;
+$red-4: $brand-4;
