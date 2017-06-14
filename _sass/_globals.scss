@@ -4,7 +4,7 @@ html{
 }
 body{
 	width:100%;
-	font-family:$serif;
+	font-family:$sans;
 	color:#333;
 	* + *{
 		margin:1em auto 0;
@@ -48,12 +48,12 @@ h1{
 
 h2{
 	font-size: 2.5rem;
-	color:$cool-grey;
+	color:$grey;
 }
 
 h3{
 	font-size: 2rem;
-	color:$cool-grey;
+	color:$grey;
 }
 
 h4{
@@ -61,7 +61,7 @@ h4{
 	text-transform:uppercase;
 	color:$brand;
 	text-align: left;
-	font-family: $serif;
+	font-family: $sans;
 }
 
 p,aside,pre code,li{
@@ -69,7 +69,7 @@ p,aside,pre code,li{
 	line-height: 1.75;
 	color:$grey-3;
 	@media #{$desktop}{
-		font-size: 1.35rem;
+		font-size: 1.2rem;
 		line-height: 1.85;
 	}
 }
@@ -101,7 +101,7 @@ pre{
 }
 aside{
 	color:$brand-3;
-	font-family: $serif;
+	font-family: $sans;
 	@media #{$desktop}{
 		float:left;
 		position:absolute;
@@ -225,7 +225,7 @@ figure{
 		width:100%;
 		h2{
 			text-transform: uppercase;
-			font-family: $serif;
+			font-family: $sans;
 			font-weight: 900;
 			color: #fff;
 			&:after{

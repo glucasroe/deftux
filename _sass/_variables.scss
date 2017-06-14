@@ -1,34 +1,34 @@
 //Type
-$sans:'Merriweather Sans',  'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+$sans:'Fira Sans',  'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 
 //Colors
-$brand: #00c444; //rgba(204, 105, 71, 1);
-$cool-grey:#7A7F99; //rgb(122, 127, 153, 1)
+$brand: #3185FC;
+$grey:#353535;
 $white: #fff;
 
-$grey-10: lighten($cool-grey,50%); //white
-$grey-9: lighten($cool-grey,40%); //#edeef2
-$grey-8: lighten($cool-grey,30%); //#d1d2db
-$grey-7: lighten($cool-grey,20%); //#b4b7c5
-$grey-6: lighten($cool-grey,10%); //#979baf
-$grey-5: $cool-grey;
-$grey-4: darken($cool-grey,10%); //#61667f
-$grey-3: darken($cool-grey,20%); //#4b4f62
-$grey-2: darken($cool-grey,30%); //#353845
-$grey-1: darken($cool-grey,40%); //#1f2028
-$grey-0: darken($cool-grey,50%); //#09090b
+$grey-10: lighten($grey,50%);//#fafafa
+$grey-9: lighten($grey,40%); //#e0e0e0
+$grey-8: lighten($grey,30%); //#c7c7c7
+$grey-7: lighten($grey,20%); //#adadad
+$grey-6: lighten($grey,10%); //#949494
+$grey-5: $grey;              //#7A7A7A
+$grey-4: darken($grey,10%);  //#616161
+$grey-3: darken($grey,20%);  //#474747
+$grey-2: darken($grey,30%);  //#2e2e2e
+$grey-1: darken($grey,40%);  //#141414
+$grey-0: darken($grey,50%);  //#000000
 
-$brand-10: lighten($brand,50%);
-$brand-9: lighten($brand,40%);
-$brand-8: lighten($brand,30%);
-$brand-7: lighten($brand,20%);
-$brand-6: lighten($brand,10%);
-$brand-5: $brand;
-$brand-4: darken($brand,10%);
-$brand-3: darken($brand,20%);
-$brand-2: darken($brand,30%);
-$brand-1: darken($brand,40%);
-$brand-0: darken($brand,50%);
+$brand-10: lighten($brand,50%);//#FFFFFF
+$brand-9: lighten($brand,40%); //#fafcff
+$brand-8: lighten($brand,30%); //#c8defe
+$brand-7: lighten($brand,20%); //#96c1fd
+$brand-6: lighten($brand,10%); //#63a3fd
+$brand-5: $brand;              //#3185FC
+$brand-4: darken($brand,10%);  //#0468f6
+$brand-3: darken($brand,20%);  //#0353c4
+$brand-2: darken($brand,30%);  //#023e92
+$brand-1: darken($brand,40%);  //#012860
+$brand-0: darken($brand,50%);  //#01132d
 
 $transparent-brand-1: fade-out($brand, 0.2);
 $transparent-brand-2: fade-out($brand, 0.4);
@@ -39,8 +39,3 @@ $transparent-brand-5: fade-out($brand, 1);
 //Media Queries
 $tablet: "screen and (min-width:40em)";
 $desktop: "screen and (min-width:80em)";
-
-$serif: $sans;
-$red: $brand;
-$red-2: brand-2;
-$red-4: $brand-4;
