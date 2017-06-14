@@ -2,6 +2,7 @@
 %head
   %title Bonjour
   %link(rel="stylesheet" type="text/css" href="_site/style.css")
+  %script(src="js/medium-zoom.js")
 %body
   .entry.entry--horizontal
     %img.entry__photo(src="tumblr_files/tumblr_nq5dbwasRw1uw89sso1_1280.png")
@@ -9,6 +10,13 @@
       %h2.entry__title
         %a(href="#") Day 19: Google Now Gas Stations
       .entry__meta
+        .meta__posted 2017/06/05
+        .meta__captured Spring 2016
+        .meta__category
+          %a(href="#") 100days
+        .meta__tags
+          :markdown
+            [notable](#), [dibly](#) ,[darbly](#), [dank](#), [dordaford](#), [damansk](#), [schnordinford](#), [temerend](#)
       .entry__text
         :markdown
           **What it is**: When travelling home from Philadelphia this past weekend, I brought up Google Now. It showed me a list of gas stations off of my route, and the amount of time the detour would take.
@@ -18,3 +26,5 @@
           This use case is an exact compliment to my needs, it was exactly what my wife and I needed as we travelled down the interstate. The biggest challenge is I don&rsquo;t know how to make it appear, but Google guessed correctly and made it surface at the right time.
 
           Now I just need it to do the same thing Coffee shops.
+  :javascript
+    mediumZoom('.entry__photo');

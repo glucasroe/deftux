@@ -87,19 +87,19 @@ p > a:hover, nav > a:hover {
 
 h1 {
   font-size: 3rem;
-  color: black;
+  color: #2e2e2e;
   font-family: "Fira Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   line-height: 1.1;
 }
 
 h2 {
   font-size: 2.5rem;
-  color: #353535;
+  color: #7a7a7a;
 }
 
 h3 {
   font-size: 2rem;
-  color: #353535;
+  color: #7a7a7a;
 }
 
 h4 {
@@ -113,7 +113,7 @@ h4 {
 p, aside, pre code, li {
   font-size: 1rem;
   line-height: 1.75;
-  color: #020202;
+  color: #474747;
 }
 @media screen and (min-width: 80em) {
   p, aside, pre code, li {
@@ -124,24 +124,24 @@ p, aside, pre code, li {
 
 code {
   font-family: monaco, monospace;
-  color: #1c1c1c;
-  background-color: #9b9b9b;
+  color: #616161;
+  background-color: #e0e0e0;
   border-radius: 10px;
   padding: 0.15em 0.5em;
   margin: 0 2px;
 }
 
 pre {
-  background-color: black;
+  background-color: #141414;
   border-radius: 3px;
   padding: 1em;
   overflow: auto;
 }
 pre code {
-  color: #686868;
+  color: #adadad;
   white-space: pre;
   line-height: 1.25;
-  background-color: black;
+  background-color: #141414;
   float: left;
   overflow: auto;
   padding: 0em;
@@ -192,7 +192,7 @@ blockquote:after {
 blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p {
   margin-left: 2rem;
   font-style: italic;
-  color: #4f4f4f;
+  color: #949494;
 }
 blockquote p {
   font-size: 1.7rem;
@@ -205,12 +205,12 @@ q {
 }
 q:before {
   content: '\201C';
-  color: #686868;
+  color: #adadad;
   margin-right: 0.1em;
 }
 q:after {
   content: '\201d';
-  color: #686868;
+  color: #adadad;
   margin-left: 0.1em;
 }
 
@@ -408,7 +408,7 @@ main, .site-header, .entry {
 
 .fabulous {
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(100deg, #3185FC, #353535);
+  background: -webkit-linear-gradient(100deg, #3185FC, #7a7a7a);
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
   /*Lifted directly from this brilliance http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html*/
@@ -440,7 +440,7 @@ main, .site-header, .entry {
   font-size: 1.5rem;
   display: inline-block;
   vertical-align: middle;
-  color: #686868;
+  color: #adadad;
 }
 .site-header nav {
   border: 1px #3185FC solid;
@@ -605,11 +605,11 @@ div.gfyitem .gfyGif {
 
 .highlight code, .highlight pre {
   color: #fdce93;
-  background-color: black;
+  background-color: #141414;
 }
 
 .highlight .hll {
-  background-color: black;
+  background-color: #141414;
 }
 
 .highlight .c {
@@ -895,4 +895,9 @@ div.gfyitem .gfyGif {
 
 .entry__title {
   color: #3185FC;
+}
+
+.entry__meta {
+  background-color: #e0e0e0;
+  border-radius: 10px;
 }
