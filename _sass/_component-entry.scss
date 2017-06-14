@@ -7,5 +7,64 @@
 .entry__meta{
   background-color: $grey-9;
   border-radius: 10px;
+  @media #{$tablet}{
+    @include display(flex);
+    @include flex-wrap(wrap);
+  }
 }
-.meta__posted{}
+.meta__item{
+  padding: 1rem;
+  margin:0;
+  border: 1px solid $grey-10;
+  content: '';
+  &:before{
+    font-weight: bold;
+    margin-right: 0.5em;
+    text-transform:uppercase;
+  }
+  @media #{$tablet}{
+    @include flex-basis(50%);
+  }
+}
+.meta__item--posted{
+  &:before{
+    content:'Posted';
+  }
+}
+
+.meta__item--captured{
+  &:before{
+    content:'Captured';
+  }
+}
+.meta__item--category{
+  &:before{
+    content:'Category';
+  }
+}
+.meta__item--author{
+  &:before{
+    content:'Poster';
+  }
+}
+.meta__item--tags{
+  @include flex-basis(100%);
+  line-height: 1.5;
+  &:before{
+    content: 'Tags';
+  }
+}
+.entry--portrait{
+  @include display(flex);
+}
+.entry--portrait .entry__photo,
+.entry--portrait .entry__info{
+  margin:0;
+  width: 50%;
+}
+.entry--portrait .entry__photo{
+//  width: 25%;
+}
+.entry--portrait .entry__info{
+//  width: 75%;
+}

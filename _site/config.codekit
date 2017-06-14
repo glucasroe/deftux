@@ -3457,31 +3457,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/tiles.haml": {
-		"escapeHTMLCharacters": 0,
-		"fileType": 256,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/tiles.haml",
-		"noEscapeInAttributes": 0,
-		"outputAbbreviatedPath": "\/_site\/tiles.html",
-		"outputFormat": 2,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"useCDATA": 0,
-		"useDoubleQuotes": 0,
-		"useUnixNewlines": 0
-		},
-	"\/_site\/tiles.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/tiles.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_site\/tumblr_files\/tumblr_nowtk5Jbmi1uw89sso1_500.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

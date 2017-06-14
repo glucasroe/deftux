@@ -1,3 +1,6 @@
+*{
+	box-sizing: border-box;
+}
 html{
 	font-size: 100%;
 	//overflow:hidden;
@@ -238,9 +241,8 @@ figure{
 	background-color: $brand;
 	color:$white;
 }
-
 //// LEGACY?
-figure img{
+figure img, img{
 	margin-left:0;
 	width:100%;
 	max-width:100%;

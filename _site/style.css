@@ -40,6 +40,10 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
 }
@@ -302,7 +306,7 @@ figure figcaption h2:after {
   color: #fff;
 }
 
-figure img {
+figure img, img {
   margin-left: 0;
   width: 100%;
   max-width: 100%;
@@ -603,6 +607,10 @@ div.gfyitem .gfyGif {
   position: relative !important;
 }
 
+.medium-zoom-overlay {
+  margin: 0;
+}
+
 .highlight code, .highlight pre {
   color: #fdce93;
   background-color: #141414;
@@ -900,4 +908,85 @@ div.gfyitem .gfyGif {
 .entry__meta {
   background-color: #e0e0e0;
   border-radius: 10px;
+}
+@media screen and (min-width: 40em) {
+  .entry__meta {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.meta__item {
+  padding: 1rem;
+  margin: 0;
+  border: 1px solid #fafafa;
+  content: '';
+}
+.meta__item:before {
+  font-weight: bold;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 40em) {
+  .meta__item {
+    -webkit-flex-basis: 50%;
+    -moz-flex-basis: 50%;
+    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+  }
+}
+
+.meta__item--posted:before {
+  content: 'Posted';
+}
+
+.meta__item--captured:before {
+  content: 'Captured';
+}
+
+.meta__item--category:before {
+  content: 'Category';
+}
+
+.meta__item--author:before {
+  content: 'Poster';
+}
+
+.meta__item--tags {
+  -webkit-flex-basis: 100%;
+  -moz-flex-basis: 100%;
+  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  line-height: 1.5;
+}
+.meta__item--tags:before {
+  content: 'Tags';
+}
+
+.entry--portrait {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.entry--portrait .entry__photo,
+.entry--portrait .entry__info {
+  margin: 0;
+  width: 50%;
 }
