@@ -90,12 +90,10 @@
   }
 }
 .entry--hanging-photo .entry__info{
+  margin-top: 1em;
   @media #{$broad}{
     width: 30rem;
     position: relative;
     left: 20rem;
   }
-}
-.entry--landscape .entry__info{
-  margin-top:0;
 }
