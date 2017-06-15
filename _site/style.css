@@ -322,20 +322,20 @@ figure img, img {
   margin: 0;
 }
 
-pre:after, .site-header nav:after, footer:after {
+pre:after, footer:after {
   content: "";
   display: table;
   clear: both;
 }
 
-main, .site-header, .entry {
+main, .entry {
   max-width: 40rem;
   margin: 0 auto 0;
   position: relative;
   padding: 0 1.5em;
 }
 @media screen and (min-width: 80em) {
-  main, .site-header, .entry {
+  main, .entry {
     left: 0rem;
   }
 }
@@ -427,101 +427,17 @@ main, .site-header, .entry {
   visibility: hidden;
 }
 
-.site-header a img {
-  margin: 1rem 0 1rem 1rem;
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  max-width: 6rem;
-  -webkit-font-smoothing: antialiased;
+.site-header {
+  border-bottom: 1px solid #3185FC;
+  padding: 1em;
 }
-.site-header h1 {
-  text-align: left;
-  font-family: "Fira Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-weight: bold;
-  margin-left: 1rem;
-  margin-top: 0;
-  font-size: 1.5rem;
-  display: inline-block;
-  vertical-align: middle;
-  color: #adadad;
+
+.header__logo {
+  max-width: 10rem;
 }
-.site-header nav {
-  border: 1px #3185FC solid;
-  border-radius: 5px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 0;
-}
-.site-header nav a {
-  box-sizing: border-box;
-  width: 33.33333%;
-  margin: 0;
-  padding: 10px 0;
-  float: left;
-  font-family: "Fira Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  text-align: center;
-  background-position: 0 1.7em;
-  background-size: 0;
-}
-.site-header nav a + a {
-  border-left: 1px solid #0468f6;
-}
-.site-header nav a:hover {
-  background-color: #3185FC;
-  color: #fff;
-  text-shadow: none;
-}
-@media screen and (min-width: 40em) {
-  .site-header nav {
-    border: 0;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 0;
-    margin-left: 5rem;
-  }
-  .site-header nav a {
-    width: auto;
-    float: none;
-    background-size: 2px 2px;
-  }
-  .site-header nav a + a {
-    border: 0;
-    margin-left: 2rem;
-  }
-  .site-header nav a:hover {
-    background-color: transparent;
-    color: #023e92;
-  }
-}
-@media screen and (min-width: 40em) {
-  .site-header {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-pack: justify;
-  }
+
+.header__brand {
+  display: none;
 }
 
 footer {
