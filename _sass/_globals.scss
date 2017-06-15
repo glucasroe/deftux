@@ -4,19 +4,25 @@
 html{
 	font-size: 100%;
 	//overflow:hidden;
+	background-color: $grey-10;
 }
 body{
 	width:100%;
 	font-family:$sans;
 	color:#333;
-	* + *{
+/*	* + *{
 		margin:1em auto 0;
 		@media #{$desktop}{
 			margin-top: 1.1em;
 		}
+	}*/
+}
+.entry * + * {
+	margin:1em auto 0;
+	@media #{$desktop}{
+		margin-top: 1.1em;
 	}
 }
-
 main{
 	@extend %site-width;
 	min-height: calc(100vh - 325px);

@@ -1,5 +1,26 @@
+.ruler{
+  display: none;
+  background-color: $brand;
+  height: 1rem;
+  position:fixed;
+  top:0;
+  left:0;
+  width: 64rem;
+  z-index: 100;
+
+}
 .entry{
   @extend %site-width;
+  padding:0;
+  background-color: $brand;
+  margin-top: 1em;
+}
+.entry__photo{
+  padding:1.5rem;
+}
+.entry__info{
+  background-color: $grey-10;
+  padding:1.5rem;
 }
 .entry__title{
   color: $brand;
@@ -54,17 +75,27 @@
     content: 'Tags';
   }
 }
-.entry--portrait{
-  @include display(flex);
+.entry--hanging-photo{
+  //@include display(flex);
 }
-.entry--portrait .entry__photo,
-.entry--portrait .entry__info{
+.entry--hanging-photo .entry__photo,
+.entry--hanging-photo .entry__info{
   margin:0;
-  width: 50%;
 }
-.entry--portrait .entry__photo{
-//  width: 25%;
+.entry--hanging-photo .entry__photo{
+  @media #{$broad}{
+    max-width: 25rem;
+    position: absolute;
+    left: -5rem;
+  }
 }
-.entry--portrait .entry__info{
-//  width: 75%;
+.entry--hanging-photo .entry__info{
+  @media #{$broad}{
+    width: 30rem;
+    position: relative;
+    left: 20rem;
+  }
+}
+.entry--landscape .entry__info{
+  margin-top:0;
 }
