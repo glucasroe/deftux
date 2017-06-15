@@ -901,6 +901,32 @@ div.gfyitem .gfyGif {
   color: #8cd0d3;
 }
 
+.ruler {
+  display: none;
+  background-color: #3185FC;
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 64rem;
+  z-index: 100;
+}
+
+.entry {
+  padding: 0;
+  background-color: #3185FC;
+  margin-top: 1em;
+}
+
+.entry__photo {
+  padding: 1.5rem;
+}
+
+.entry__info {
+  background-color: #fafafa;
+  padding: 1.5rem;
+}
+
 .entry__title {
   color: #3185FC;
 }
@@ -975,20 +1001,9 @@ div.gfyitem .gfyGif {
   content: 'Tags';
 }
 
-.entry--portrait {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.entry--portrait .entry__photo,
-.entry--portrait .entry__info {
+.entry--hanging-photo .entry__photo,
+.entry--hanging-photo .entry__info {
   margin: 0;
-  width: 50%;
 }
 
 @media screen and (min-width: 64em) {
