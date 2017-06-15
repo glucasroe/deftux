@@ -1,26 +1,5 @@
-.ruler{
-  display: none;
-  background-color: $brand;
-  height: 1rem;
-  position:fixed;
-  top:0;
-  left:0;
-  width: 64rem;
-  z-index: 100;
-
-}
 .entry{
   @extend %site-width;
-  padding:0;
-  background-color: $brand;
-  margin-top: 1em;
-}
-.entry__photo{
-  padding:1.5rem;
-}
-.entry__info{
-  background-color: $grey-10;
-  padding:1.5rem;
 }
 .entry__title{
   color: $brand;
@@ -75,12 +54,13 @@
     content: 'Tags';
   }
 }
-.entry--hanging-photo{
-  //@include display(flex);
+.entry--portrait{
+  @include display(flex);
 }
-.entry--hanging-photo .entry__photo,
-.entry--hanging-photo .entry__info{
+.entry--portrait .entry__photo,
+.entry--portrait .entry__info{
   margin:0;
+  width: 50%;
 }
 .entry--hanging-photo .entry__photo{
   @media #{$broad}{

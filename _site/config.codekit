@@ -3457,6 +3457,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/_site\/tiles.haml": {
 		"escapeHTMLCharacters": 0,
 		"fileType": 256,
@@ -3482,6 +3483,8 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+=======
+>>>>>>> parent of 99b1903... Wrapping up post design
 	"\/_site\/tumblr_files\/tumblr_nowtk5Jbmi1uw89sso1_500.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
