@@ -975,10 +975,20 @@ div.gfyitem .gfyGif {
   content: 'Tags';
 }
 
-<<<<<<< HEAD
-.entry--hanging-photo .entry__photo,
-.entry--hanging-photo .entry__info {
+.entry--portrait {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.entry--portrait .entry__photo,
+.entry--portrait .entry__info {
   margin: 0;
+  width: 50%;
 }
 
 @media screen and (min-width: 64em) {
@@ -999,20 +1009,3 @@ div.gfyitem .gfyGif {
     left: 20rem;
   }
 }
-=======
-.entry--portrait {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.entry--portrait .entry__photo,
-.entry--portrait .entry__info {
-  margin: 0;
-  width: 50%;
-}
->>>>>>> parent of 99b1903... Wrapping up post design
