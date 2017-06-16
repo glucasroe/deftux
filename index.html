@@ -16,13 +16,13 @@ layout: default
         <img src="{{ site.baseurl }}/images/{{ post.image }}"/>
       </div>
       <div class="entry__info">
-        <h2 class="entry__title">{{ STUB }}</h2>
+        <h2 class="entry__title">{{ post.title }}</h2>
         <div class="entry__meta">
-          <div class="meta__item meta__item--posted"></div>
-          <div class="meta__item meta__item--captured"></div>
-          <div class="meta__item meta__item--category"></div>
-          <div class="meta__item meta__item--author"></div>
-          <div class="meta__item.meta__item--tags"></div>
+          <div class="meta__item meta__item--posted">{{ post.posted }}</div>
+          <div class="meta__item meta__item--captured">{{ post.captured }}</div>
+          <div class="meta__item meta__item--category">{{ post.category }}</div>
+          <div class="meta__item meta__item--author">{{ post.author }}</div>
+          <div class="meta__item.meta__item--tags">{{ post.tags }}</div>
         </div>
         <div class="entry__text">
           {{ post.content }}
