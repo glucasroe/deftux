@@ -22,7 +22,7 @@ url: deftux.com # the base hostname & protocol for your site, e.g. http://exampl
 twitter_username: glucasroe
 github_username:  glucasroe
 permalink: /:title/
-paginate: 5
+paginate: 10
 # Build settings
 kramdown:
   input: GFM
