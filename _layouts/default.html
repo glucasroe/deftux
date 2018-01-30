@@ -12,20 +12,16 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <script src='js/medium-zoom.js'></script>
-
   </head>
 
-  <body>
+  <body class="animate-in">
     <header class="site-header">
       <a href='{{ site.baseurl }}/'>
         <img class="header__logo" alt='deft ux Logo' src='{{ site.baseurl }}/images/site/deftux.png'>
         <h1 class="header__brand">Deftux</h1>
       </a>
     </header>
-
-    <div class='animate-in post-body'>
-      {{ content }}
-    </div>
+    {{ content }}
     <footer>
       <p class="copyright">Unless otherwise noted, content is &copy; 2016 G. Lucas Roe, and shouldn't be used without at least asking nicely. I can't stop you, but some wicked bad karma will come your way.</p>
     </footer>
