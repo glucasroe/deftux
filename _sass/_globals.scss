@@ -252,3 +252,7 @@ figure img, img{
 		font-size: 2rem;
 	}
 }
+
+.headline--recent{
+	@extend %site-width;
+}

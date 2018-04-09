@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<article>
+<article class="feature">
   Feature Stub
 </article>
 
-<h1>Recent:</h1>
+<h2 class="headline--recent">Recent:</h2>
 {% for post in paginator.posts %}
   {% if post.hanging %}
     <article class="entry entry--hanging-photo">
@@ -22,7 +22,7 @@ layout: default
           <div class="meta__item meta__item--captured">{{ post.captured }}</div>
           <div class="meta__item meta__item--category">{{ post.category }}</div>
           <div class="meta__item meta__item--author">{{ post.author }}</div>
-          <div class="meta__item.meta__item--tags">{{ post.tags }}</div>
+          <div class="meta__item meta__item--tags">{% if post.tags %}{% for tag in post.tags %}{{ tag | capitalize }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}{% endif %}</div>
         </div>
         <div class="entry__text">
           {{ post.content }}
@@ -30,6 +30,21 @@ layout: default
       </div>
     </article>
 {% endfor %}
+{% if paginator.total_pages > 1 %}
+<nav class="pagination">
+  <div class="pagination__links">
+    {% if paginator.previous_page %}
+      <a class="pagination__link pagination__link--newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts</a>
+    {% else %}
+    {% endif %}
+    <span class="pagination__page-number">Page {{paginator.page}} of {{ paginator.total_pages}}</span>
+    {% if paginator.next_page %}
+      <a class="pagination__link pagination__link--older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts</a>
+    {% else %}
+    {% endif %}
+  </div>
+</nav>
+{% endif %}
 <!--.entry.entry--hanging-photo
   .entry__photo
     %img(src="tumblr_files/tumblr_nq5dbwasRw1uw89sso1_1280.png")
