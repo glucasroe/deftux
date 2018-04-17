@@ -25,6 +25,13 @@
 .entry__title{
   color: $brand;
 }
+.entry__link{
+  display: inline-block;
+  margin-left: 0.25em;
+  width: 0.5em;
+  height: 0.5em;
+  background-image: url('/images/site/link.svg');	
+}
 .entry__meta{
   background-color: $grey-9;
   border-radius: 10px;
