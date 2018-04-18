@@ -3,18 +3,34 @@
     color: $brand-9;
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
     padding: 0.5em;
-}
-.pagination__links{
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media #{$broad}{
+	background-color: transparent;
+	color: $brand-1;
+        right: 1em;
+	width: 1em;
+	padding:0;
+	top:50%;
+	bottom: auto;
+	flex-wrap: wrap;
+	&>*{
+	    width: 100%;
+        }
+    }
 }
-.pagination__link{
-    margin-top:0;
+
+.pagination__link, .pagination__page-number{
+    margin: 0 0.5em;
     text-align: center;
+}
+
+.pagination__link{
+
 }
 
 .pagination__page-number{

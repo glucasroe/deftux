@@ -4,7 +4,7 @@ layout: default
 <article class="feature">
 </article>
 
-<h2 class="headline--recent">Recent:</h2>
+<!--<h2 class="headline--recent">Recent:</h2>-->
 {% for post in paginator.posts %}
   {% if post.hanging %}
     <article class="entry entry--hanging-photo">
@@ -31,7 +31,6 @@ layout: default
 {% endfor %}
 {% if paginator.total_pages > 1 %}
 <nav class="pagination">
-  <div class="pagination__links">
     {% if paginator.previous_page %}
     <a class="pagination__link pagination__link--newer" aria-label="Newer Posts" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#x1f448;</a>
     {% else %}
@@ -41,7 +40,6 @@ layout: default
       <a class="pagination__link pagination__link--older" aria-label="Older Posts" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#x1F449;</a>
     {% else %}
     {% endif %}
-  </div>
 </nav>
 {% endif %}
 </main>

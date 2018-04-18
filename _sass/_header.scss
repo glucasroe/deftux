@@ -1,10 +1,13 @@
 .site-header{
 	//background-color: $grey-1;
-	border-bottom: 1px solid $brand;
+//	border-bottom: 1px solid $brand;
 	padding: 1em;
+	display:flex;
+	justify-content: center;
 }
 .header__logo{
 	max-width: 10rem;
+	margin: 0 auto 0;
 }
 .header__brand{
 	display: none;
