@@ -13,3 +13,4 @@ Gemfile.lock
 node_modules
 package.json
 Gemfile.lock
+.ruby-version

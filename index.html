@@ -33,52 +33,15 @@ layout: default
 <nav class="pagination">
   <div class="pagination__links">
     {% if paginator.previous_page %}
-      <a class="pagination__link pagination__link--newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts</a>
+    <a class="pagination__link pagination__link--newer" aria-label="Newer Posts" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#x1f448;</a>
     {% else %}
     {% endif %}
-    <span class="pagination__page-number">Page {{paginator.page}} of {{ paginator.total_pages}}</span>
+    <span class="pagination__page-number">{{paginator.page}} of {{ paginator.total_pages}}</span>
     {% if paginator.next_page %}
-      <a class="pagination__link pagination__link--older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts</a>
+      <a class="pagination__link pagination__link--older" aria-label="Older Posts" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#x1F449;</a>
     {% else %}
     {% endif %}
   </div>
 </nav>
 {% endif %}
-<!--.entry.entry--hanging-photo
-  .entry__photo
-    %img(src="tumblr_files/tumblr_nq5dbwasRw1uw89sso1_1280.png")
-  .entry__info
-    %h2.entry__title
-      %a(href="#") Day 19: Google Now Gas Stations
-    .entry__meta
-      .meta__item.meta__item--posted 2017/06/05
-      .meta__item.meta__item--captured Spring 2016
-      .meta__item.meta__item--category
-        %a(href="#") 100days
-      .meta__item.meta__item--author Lucas
-      .meta__item.meta__item--tags <a href="#">notable</a> <a href="#">dibly</a>, <a href="#">darbly</a>, <a href="#">dank</a>, <a href="#">dordaford</a>, <a href="#">damansk</a>, <a href="#">schnordinford</a>, <a href="#">temerend</a>
-    .entry__text
-  <article class="post post-preview">
-    {% if post.image %}
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <img class="post-featured-image post-image-header animated" src="{{ site.baseurl }}/images/{{ post.image }}" />
-      </a>
-    {% endif %}
-
-    <header class="post-header">
-      <h2 class="post-title">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h2>
-      <div class="post-meta">Posted on <time>{{ post.date | date: "%Y %B %e" }}</time>{% if post.tags %}{% for tag in post.tags %}{% if forloop.first == true %} under {% endif %}<a href="{{ site.baseurl }}/tag/{{ tag | slugify }}" class="post-tag">{{ tag | capitalize }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}{% endif %}
-    </div>
-    </header>
-
-    <section class="post-excerpt">
-      {{ post.excerpt }}
-    </section>
-    {% if forloop.last != true %}
-      <hr class="post-separator" />
-    {% endif %}
-  </article>
--->
 </main>
