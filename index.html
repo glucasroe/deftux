@@ -35,7 +35,9 @@ layout: default
     <a class="pagination__link pagination__link--newer" aria-label="Newer Posts" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#x1f448;</a>
     {% else %}
     {% endif %}
-    <span class="pagination__page-number">{{paginator.page}} of {{ paginator.total_pages}}</span>
+    <div class="pagination__page-number">{{paginator.page}}</div>
+    <div class="pagination__separator"></div>
+    <div class="pagination__page-number">{{ paginator.total_pages}}</div>
     {% if paginator.next_page %}
       <a class="pagination__link pagination__link--older" aria-label="Older Posts" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#x1F449;</a>
     {% else %}
