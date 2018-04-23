@@ -5,7 +5,7 @@ layout: default
     <article class="post">
       <h1>{{ page.title }}</h1>
         {% if page.image %}
-            <img class="post-image-header animated fade-in-color" src="{{ site.baseurl }}/images/{{ page.image }}" />
+            <img class="post-image-header" src="{{ site.baseurl }}/images/{{ page.image }}" />
         {% endif %}
         <div class="entry__meta">
           <div class="meta__item meta__item--posted">{{ page.date | date: '%Y %b %d' }}</div>
