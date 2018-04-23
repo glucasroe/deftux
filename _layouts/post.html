@@ -4,12 +4,20 @@ layout: default
 <main class="content" role="main">
     <article class="post">
       <h1>{{ page.title }}</h1>
-        <div class="post-meta">Posted on <time>{{ page.date | date: "%Y %B %e" }}</time>{{ tags_content }}
-        </div>
-
         {% if page.image %}
             <img class="post-image-header animated fade-in-color" src="{{ site.baseurl }}/images/{{ page.image }}" />
         {% endif %}
+        <div class="entry__meta">
+          <div class="meta__item meta__item--posted">{{ page.date | date: '%Y %b %d' }}</div>
+	  <div class="meta__item meta__item--captured">{% if page.captured %}{{ page.captured | date: '%Y %b %d' }}{% else %}{{ page.date | date: '%Y %b %d' }}{% endif %}</div>
+          <div class="meta__item meta__item--category">{{ page.category }}</div>
+	  <div class="meta__item meta__item--author">{% if page.author %}{{ page.author }}{% else %}Lucas Roe{% endif %}</div>
+          <div class="meta__item meta__item--tags">{% if page.tags %}{% for tag in page.tags %}{{ tag | capitalize }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}{% endif %}</div>
+        </div>
+        <div class="entry__text">
+          {{ page.content }}
+        </div>
+
       <div class="entry">
         {{ content }}
       </div>
