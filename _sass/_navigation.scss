@@ -24,16 +24,26 @@
     }
 }
 
-.pagination__link, .pagination__page-number{
+.pagination__link, .pagination__page-number, .pagination__separator{
     margin: 0 0.5em;
     text-align: center;
-}
-
-.pagination__link{
-
 }
 
 .pagination__page-number{
     margin-top:0;
     text-align: center;
+}
+
+.pagination__separator:after{
+    content:"";
+    display: inline-block;
+    border-left: 1px solid $brand-6;
+    width: 1px;
+    height: 1em;
+    left: 0.25em;
+    transform: rotate(15deg);
+    @media #{$broad}{
+	transform: rotate(90deg);
+	border-color: $brand-8;
+    }
 }

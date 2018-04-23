@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <script src='js/medium-zoom.js'></script>
   </head>
 
   <body class="">
@@ -25,6 +24,7 @@
     <footer>
       <p class="copyright">Unless otherwise noted, content is &copy; {{ 'now' | date: "%Y" }} G. Lucas Roe, and shouldn't be used without at least asking nicely. I can't stop you, but some wicked bad karma will come your way.</p>
     </footer>
+    <script src='{{site.baseurl}}/js/medium-zoom.js'></script>
     <script>
       mediumZoom('.entry__photo img');
     </script>
